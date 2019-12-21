@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
             resp.sendRedirect(contextPath.concat("/queryStu.jsp"));
         } else {
             System.out.println("密码错误或用户名不存在");
-            req.getRequestDispatcher("/index.jsp").forward(req,resp);
+            req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }
     }
 
